@@ -9,14 +9,14 @@
   height: 100dvh;
   width: 100dvw;
   border: 2px solid red;
-  /* background-color: rgb(0, 0, 0); */
+  background-color: rgb(0, 0, 0);
   text-align: center;
 }
 .calculatorHeading {
   color: red;
 }
 .calculatorHeroSection {
-  /* border: 2px solid green; */
+  border: 2px solid green;
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -34,7 +34,13 @@ input {
   width: 562px;
   height: 80px;
   background-color: white;
-  /* color: black; */
+  color: black;
   font-size: 36px;
   border: 2px solid;
 }
+
+
+@media  only screen(max-width:390px){
+  body{
+background: #000;
+}}
