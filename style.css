@@ -8,30 +8,47 @@
 .calculator {
   height: 100dvh;
   width: 100dvw;
-  border: 2px solid red;
-  background-color: rgb(0, 0, 0);
-  text-align: center;
+  background-color: rgb(57, 51, 51);
+text-align: center;
 }
-.calculatorHeading {
+.heading {
   color: red;
 }
+
 .calculatorHeroSection {
-  border: 2px solid green;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 5px;
   justify-content: center;
   align-items: center;
-  border: 1px solid;
-  border-radius: 20px;
+  /* border: 1px solid;
+  border-radius: 20px; */
+}
+.firstRow,
+.secondRow,
+.thirdRow,
+.fourthRow,
+.fifthRow {
+  display: flex;
+  gap: 10px;
 }
 button {
-  width: 140px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  width: 100px;
+  background: #fff;
   height: 90px;
-  font-size: 30px;
+  font-size: 36px;
+  cursor: pointer;
 }
+button:hover {
+  background: red;
+  color: #fff;
+}
+
 input {
-  width: 562px;
+  border: 1px solid #fff;
+  border-radius: 15px;
   height: 80px;
   background-color: white;
   color: black;
@@ -39,8 +56,18 @@ input {
   border: 2px solid;
 }
 
-
-@media  only screen(max-width:390px){
-  body{
-background: #000;
-}}
+@media only screen and (max-width: 551px) {
+  button {
+    width: 75px;
+  }
+  input {
+    width: 300px;
+  }
+  .firstRow,
+  .secondRow,
+  .thirdRow,
+  .fourthRow,
+  .fifthRow {
+    gap: 2px;
+  }
+}
